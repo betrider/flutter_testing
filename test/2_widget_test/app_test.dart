@@ -17,7 +17,6 @@ void main() {
       await tester.pumpWidget(const MyWidget(title: 'T', message: 'M'));
       final titleFinder = find.text('T');
       final messageFinder = find.text('M');
-
       expect(titleFinder, findsOneWidget);
       expect(messageFinder, findsOneWidget);
     });
